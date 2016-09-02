@@ -1,0 +1,32 @@
+{
+  "name": "akh.either",
+  "version": "0.0.0",
+  "description": "Akh either monad",
+  "author": "Matt Bierner",
+  "license": "MIT",
+  "keywords": [
+    "monad transformer",
+    "monad",
+    "akh",
+    "either"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattbierner/akh-either.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mattbierner/akh-either/issues"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "akh.core.spec": "0.x",
+    "akh.identity": "^0.1.0"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha ./tests"
+  }
+}
