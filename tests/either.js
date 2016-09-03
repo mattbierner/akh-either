@@ -10,12 +10,20 @@ describe('Either', () => {
         const c = Either.of(3)
 
         assert.deepEqual(
-            Either.either(c, l, r),
-            [true, 3])
+            [true, 3],
+            Either.either(c, l, r))
 
         assert.deepEqual(
-            Either.run(c),
-            { right: true, value: 3 })
+            [true, 3],
+            c.either(l, r))
+
+        assert.deepEqual(
+            { right: true, value: 3 },
+            Either.run(c))
+
+        assert.deepEqual(
+            { right: true, value: 3 },
+            c.run())
     })
 
     it("left", () => {

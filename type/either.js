@@ -26,4 +26,12 @@ Either.either = (m, l, r) =>
         x => Identity.of(l(x)),
         x => Identity.of(r(x))))
 
+Either.prototype.run = function() {
+    return Either.run(this)
+}
+
+Either.prototype.either = function(l, r) {
+    return Either.either(this, l, r)
+}
+
 module.exports = Either

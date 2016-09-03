@@ -1,7 +1,7 @@
 {
   "name": "akh.either",
-  "version": "0.0.0",
-  "description": "Akh either monad",
+  "version": "0.0.1",
+  "description": "Akh either monad and monad transformer",
   "author": "Matt Bierner",
   "license": "MIT",
   "keywords": [

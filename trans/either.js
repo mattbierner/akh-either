@@ -55,7 +55,15 @@ const EitherT = m => {
         left: x => new Instance(m.of(Left(x))),
         right: Instance.of
     })
-        
+
+    Instance.prototype.run = function() {
+        return EitherT.run(this)
+    }
+
+    Instance.prototype.either = function(l, r) {
+        return EitherT.either(this, l, r)
+    }
+
     return Instance
 }
 
