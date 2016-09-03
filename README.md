@@ -4,7 +4,7 @@ The EitherT transformer, `EitherT`, adds either values to a monad. The base type
 
 ```bash
 # To use as standalone package
-$ npm install --save akh.cont
+$ npm install --save akh.either
 
 # To use as part of akh library
 $ npm install --save akh
