@@ -31,7 +31,7 @@ require('akh').EitherT
 Perform a continuation computation `m` and get the result as an `Either`. `Either` has a `value` property plus either a `left` or `right` property to show its type
 
 ```js
-const Either = requre('akh.either').Either
+const Either = require('akh.either').Either
 
 Either.run(Either.right(4)) === { right: true, value: 4 }
 Either.run(Either.left(-1)) === { left: true, value: -1 }
@@ -45,7 +45,7 @@ Same as `Either.run` but for a monad transformer. Returns an `Either` value insi
 Perform a continuation computation `m` and invoke `leftCallback` for `left` results and `rightCallback` for `right` results.
 
 ```js
-const Either = requre('akh.either').Either
+const Either = require('akh.either').Either
 
 const c = Either.of(3)
         .map((x) => -x);
